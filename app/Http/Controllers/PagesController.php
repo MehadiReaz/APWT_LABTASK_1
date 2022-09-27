@@ -28,4 +28,7 @@ class PagesController extends Controller
         ->with('fax', $fax)
         ->with('email', $email);
     }
+    public function about(){
+        return view('about');
+    }
 }
