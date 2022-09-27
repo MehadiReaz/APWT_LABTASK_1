@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div>
-    Hello World
+    <h1>Welcome to AB Bank</h1>
     <br>
     {{$message}}
 </div>

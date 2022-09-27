@@ -13,16 +13,10 @@ class PagesController extends Controller
         $message = "Welcome";
         return View('home')->with('message', $message);
     }
-    public function team()
+    public function product()
     {
-        $name = "Mr. x";
-        $id="11-11111-1";
-        $dob = "10-10-2010";
-        $names=array("Mr. X", "Mr. Y", "Mr. Z");
-        return view('team')
-        ->with('name', $name)
-        ->with('id', $id)
-        ->with('dob', $dob)
+        $names=array("Existing accout", "Create accout", "Current accout", "Saving accout");
+        return view('product')
         ->with('names', $names);
     }
 }
