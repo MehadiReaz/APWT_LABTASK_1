@@ -19,4 +19,13 @@ class PagesController extends Controller
         return view('product')
         ->with('names', $names);
     }
+    public function contact(){
+        $phone = ": +88-09678555000";
+        $fax=": +880-2-58814290";
+        $email = ": info@abbl.com";
+        return view('contact')
+        ->with('phone', $phone)
+        ->with('fax', $fax)
+        ->with('email', $email);
+    }
 }
