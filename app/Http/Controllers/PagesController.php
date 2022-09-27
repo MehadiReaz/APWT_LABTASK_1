@@ -31,4 +31,13 @@ class PagesController extends Controller
     public function about(){
         return view('about');
     }
+    public function team(){
+        $person1=array("Name: Mr. Reaz", "Phone: 01733901774", "Email: Mehadi@gmail.com");
+        $person2=array("Name: Mr. Mehadi", "Phone: 01733901774", "Email: Mehadi@gmail.com");
+        $person3=array("Name: Mr. Hasan", "Phone: 01733901774", "Email: Hasan@gmail.com");
+        return view('team')
+        ->with('person1', $person1)
+        ->with('person2', $person2)
+        ->with('person3', $person3);
+    }
 }
